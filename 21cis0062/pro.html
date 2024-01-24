@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="view point" content="width=device-width,intial-scale=1.0">
+    <link rel="stylesheet"href="style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+   
+        <title>My Web Page</title>
+        <style type="text/css">
+            p.ex1{
+                border:3px dotted;
+                border-bottom-color: green;
+                border-top-color:red ;
+                border-left-color: yellow;
+                border-right-color: blue;
+            }
+            p.ex2{
+                border:5px solid;
+                border-color: blue;
+            }
+            p.ex{
+                border:3px dotted;
+                border-color:yellow;
+            }
+           
+            
+            td{
+                
+                border-style: outset;
+                border-color: blue;
+                border-width: 4px;
+            }
+            p.pp{
+                    color: black;
+                    text-align: center;
+                    text-decoration: double;
+                
+           }
+       
+        caption.top{caption-side: top;}
+        caption.bottom{caption-side: bottom;}
+        caption.right{caption-side: right;}
+        caption.left{caption-side: left;}
+        p.ww{
+            border: 5px dotted;
+            border-bottom-color: rgb(21, 28, 158);
+            border-top-color: red;
+            border-left-color:yellow;
+            border-right-color: rgb(233, 110, 16);
+        }
+        table{
+            border-color: red;
+            border-style: double;
+        }
+          
+        </style>
+    </head>
+        <body>
+            <section class="header">
+                <nav>
+                   
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hidemenu()"></i>
+
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">COURSE</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showmenu()"></i>></i>
+                </nav>
+        <div class="text-box">
+            <h1>COMPUTER KNOWLEDGE</h1>
+            <h2>Inspiration,Innovation and motivation</h2>
+            <p>Any Successful career starts with good education.<br> with us you will have deeper knowledge of computing that will be especially useful for you.</font><br>
+            </p>
+            <br>
+            <button type="" class="hero-btn"onclick="openpopup()">VISIT US TO KNOW MORE</button>
+            <div class="popup" id="popup">
+                <img src="co1.jpg">
+                <h2>Thank you!</h2>
+                
+                <button type="button"onclick="closepopup()">ok</button>
+            </div>
+        </div>
+        <script>
+            let popup=document.getElementById("popup");
+            function openpopup(){
+                popup.classList.add("open-popup");
+            }
+            function closepopup(){
+                popup.classList.remove("open-popup");
+            }
+        
+        
+        </script>
+            </section>
+            <section class="content">
+                <h1>TABLE OF CONTENT </h1>
+                <br>
+                <img align="right"src="C:\Users\Acer\Desktop\rashmi 21cis0062\r1.avif" width="1000px"height="400px">
+                 <ol type="1">
+                    <li>What is the Computer Memory</li><br>
+                    <li>Classification Of Computer Memory</li><br>
+                    <li>Internal/Primary/Main Memory</li><br>
+                     <ol type="a">
+                        <li>ROM</li>
+                        <li>RAM</li>
+                </ol>
+                <br>
+                <li>What is SRAM</li><br>
+                <ol type="a">
+                    <li>Advantages of SRAM</li>
+                    <li>Disadvantages of SRAM</li>
+                </ol>
+                <br>
+                <li>What is DRAM</li><br>
+                <ol type="a">
+                   <li>Advantages of DRAM</li>
+                    <li>Disadvantages of DRAM</li>
+                </ol>
+                <br>
+                <li>Difference between SRAM and DRAM</li><br>
+                <li>External/Secondary Memory</li><br>
+                <li>Cache Memory</li><br>
+                <li>What is Memory Representation of the computer ?</li>
+                </ol>
+                <h2 align="center"><font color="red">What is the Computer Memory</font></h2>
+                <p style="font-style:italic; font-size:medium">Memory is the electronic holding place for the instructions and data a computer needs to reach quickly. It's where information is stored for immediate use. Memory is one of the basic functions of a computer, because without it, a computer would not be able to function properly.</p>
+            <p><font color="brown">Memory is just like the human brain. It is used to store data/information and instructions. It is a data storage unit or a data storage device where data is to be processed and instructions required for processing are stored. It can store both the input and output can be stored here.
+           </font> </p>
+             </section>
+             <section class="ram">
+                <h1 align="center">Classification Of Computer Memory</h1>
+                <p>There are technically two types of computer memory:primary and secondary. 
+                     The term memory is used as a synonym for primary memory or as an abbreviation for a specific type of primary memory called random access memory (RAM).Whenever a program executes inside a computer then at first the program has to be loaded on to the computer’s primary memory. And also when a does not execute then also the program must remain loaded in computers secondary memory. This memory unit works as an extra block. In a program in memory, the entire set of performed operations is written using the keyboard as a sequence of instructions. This collection of instruction is called a program. Also, the data on which the program is to operate is entered with the help of the keyboard and can be stored in memory. Memory can also store intermediate and final results. <br>This design of a stored program computer where program, data, and result reside in-memory is because of Von Neumann.
+                </p>
+                <br>
+                <br>
+                <h2>Characteristics of Computer Memory</h2>
+                
+                <ul style="list-style-type:circle";list-style-position:outside;>
+                    <li>It is faster computer memory as compared to secondary memory.</li><br>
+                    <li>It is semiconductor memories.</li><br>
+                    <li>It is usually a volatile memory, and main memory of the computer.</li><br>
+                    <li>A computer system cannot run without primary memory.</li><br>
+                </ul>
+                <br>
+                <h2 align="center"><u>How Does Computer Memory Work?</u></h2>
+                <br>
+                <br>
+                <p>When you open a program, it is loaded from secondary memory into primary memory. Because there are various types of memory and storage, an example would be moving a program from a solid-state drive (SSD) to RAM. Because primary storage is accessed more quickly, the opened software can connect with the computer’s processor more quickly. The primary memory is readily accessible from temporary memory slots or other storage sites.</p>
+                <div style="cursor:move">
+               <img align="left" src="C:\Users\Acer\Desktop\rashmi 21cis0062\r2.png" width="300px" height="200px"></div>
+             </section>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <section class="in">
+                <h1 align="center">Internal/Primary/Main Memory</h1>
+                <p class="ex1">Main memory (sometimes called primary storage) refers to storage locations that are directly accessible by the processor. Main memory offers very fast read/write speeds but is typically much lower capacity than secondary storage devices. All stages. Random access memory (RAM)
+                It is also known as the main memory of the computer system. It is used to store data and programs or instructions during computer operations. It uses semiconductor technology and hence is commonly called semiconductor memory.</p>
+               <br>
+             <h4>Primary memory is of two types:</h4>
+             <br>
+               <uL>
+                <li>ROM</li>
+                <li> RAM</li>
+               </uL>
+               <br>
+                <mark>The central processing unit</mark> is one of the most important components in the computer. It is where various tasks are performed and an output is generated. When the microprocessor completes the execution of a set of instructions, and is ready to carry out the next task, it retrieves the information it needs from RAM. Typically, the directions include the address where the information, which needs to be read, is located. The CPU transmits the address to the RAM's controller, which goes through the process of locating the address and reading the data.
+                 <br>
+                 <br>
+                <h2 align="center">READ ONLY MEMORY</h2>
+                 <br>
+                 <p class="ex2">It is a non-volatile memory. Non-volatile memory stores information even when there is a power supply failed/ interrupted/stopped. ROM is used to store information that is used to operate the system. As its name refers to read-only memory, we can only read the programs and data that is stored on it. It contains some electronic fuses that can be programmed for a piece of specific information. The information stored in the ROM in binary format. It is also known as permanent memory.</p>
+                 <br>
+                 <h3>ROM is of four types:</h3>
+                 <ol>
+                    <li><b>MROM(Masked ROM)</b> :Hard-wired devices with a pre-programmed collection of data or instructions were the first ROMs. Masked ROMs are a type of low-cost ROM that works in this way.</li><br>
+                    <li><b>PROM (Programmable Read Only Memory)</b> :This read-only memory is modifiable once by the user. The user purchases a blank PROM and uses a PROM program to put the required contents into the PROM. Its content can’t be erased once written.</li><br>
+                    <li><b>EPROM (Erasable Programmable Read Only Memory)</b>: EPROM is an extension to PROM where you can erase the content of ROM by exposing it to Ultraviolet rays for nearly 40 minutes.</li><br>
+                    <li><b>EEPROM (Electrically Erasable Programmable Read Only Memory)</b> :Here the written contents can be erased electrically. You can delete and reprogramme EEPROM up to 10,000 times. Erasing and programming take very little time, i.e., nearly  4 -10 ms(milliseconds). Any area in an EEPROM can be wiped and programmed selectively.</li><br>
+                 </ol>
+             </section>
+             <section class="in1">
+                <h1 align="center">READ ACCEESS MEMORY</h1>
+                <p class="ex"><br><font color="blue" > (1.)</font>
+                    <font face="times new roman"><b>It is a volatile memory.</b></font><br>
+                    <br>
+                     <br><font color="blue" > (2.)</font> 
+                     <i>Volatile memory stores information based on the power supply.</i> <br>
+                     <br>
+                  <img align="right"src="C:\Users\Acer\Desktop\rashmi 21cis0062\r3.webp"width="350px" height="150px">
+                     <br><font color="blue" > (3.)</font> 
+                     <font face="times new roman">If the power supply fails/ interrupted/stopped, all the data and information on this memory will be lost.</font><br>
+                     <br>
+                      <br> <font color="blue" > (4.)</font>
+                      <font face="times new roman" size="3">RAM is used for booting up or start the computer.</font><br>
+                      <br>
+                      <br><font color="blue" > (5.)</font>
+                     <b>It temporarily stores programs/data which has to be executed by the processor.</b>
+                    </p>
+                     <br>
+             </section>
+             <section class="sram">
+                <h1 align="center" color="red">SRAM</h1>
+                <p ><font face="times new roman">SRAM is a type of semiconductor memory that uses Bistable latching circuitry to store each
+                    bit. In this type of RAM, data is stored using the six transistor memory cell. Static RAM is
+                    mostly used as a cache memory for the processor (CPU).<BR>
+                        <BR>
+                    <MARK>SRAM is relatively faster than other RAM types, such as DRAM. It also consumes less
+                        power. The full form of SRAM is Static Random Access Memory.
+                        </MARK>
+            </p>
+            <H2><u>Advantage of SRAM</u>
+            </H2>
+            <ol style="list-style-type:lower-alpha;list-style-position:inside">
+                <div style="cursor:pointer">
+                <li>SRAM performance is better than DRAM in terms of speed. It means it is faster in operations</li><br>
+                
+                <li> SRAM used to create a speed-sensitive cache.</li><br>
+                <li>It has medium power consumption.</li></div>
+                <br>
+            </ol>
+            <h2><u>Disadvantage of SRAM</u></h2>
+            <ol style="list-style-type:lower-roman;list-style-position:inside">
+                <div style="cursor:move">
+                <li> It is comparatively slower than SRAM, so it takes more time for accessing data or information </li><br>
+                <li> You will losses data when power is OFF</li><br>
+                <li>It has higher power consumption compared to SRAM.
+                </li></div>
+            </ol>
+            <img  alight="left"src="C:\Users\Acer\Desktop\rashmi 21cis0062\r4.png" width="350px"height="250px"> </section>
+            <section class="in2">
+                <h1 align="center">DRAM</h1>
+                <p><font face="times new roman"><b>It is a type of RAM which allows you to stores each bit of data in a separate capacitor within
+                    a particular integrated circuit.<br>
+                    It is a standard computer memory of any modern desktop computer. The full form of DRAM
+                    is Dynamic Random Access Memory.<br>
+                    DRAM is constructed<mark> using capacitors and a few transistors. </mark> this type of RAM, the
+                    capacitor is used for storing the data where bit value, which signifies that the capacitor is
+                    charged and a bit value 0, which means that the capacitor is discharged.</b></font></p>
+                    <H2><i>Advantage of DRAM</i>
+                    </H2>
+                    <ol style="list-style-type:upper-roman;list-style-position:inside">
+                        <div style="cursor:crosshair">
+                        <li>Cheaper compared to SRAM.</li><br>
+                        <li>It has a higher storage capacity. Hence it is used to create a larger RAM space system.
+                        </li><br>
+                        <li> Offers simple structure</li><br>
+                        <li> It doesn't require to refresh the memory contents</li><br>
+                        <li>You don't need to refresh the memory contents and its access time is faster</li><br>
+                        <li>logic or circuitry is needed, so the memory module itself is simpler</li><br></div>
+                    </ol>
+                    <h2><i>Advantage of DRAM</i></h2>
+                    <ol  style="list-style-type:upper-roman;list-style-position:inside">
+                        <div style="cursor:e-resize">
+                        <li>It is costlier compared to DRAM</li><br>
+                        <li>It is volatile, so you will lose the data when memory is not powered.</li><br>
+                        <li>DRAM does not offer to refresh programs</li><br>
+                        <li>It has a low storage capacity.</li><br>
+                        <li>SRAM offers a more complex design.</li><br>
+                        <li>Reduces the memory density</li><br></div>
+                    </ol>
+            </section>
+            <section class="di">
+                <h2 align="center"><font color="red"> <div style="cursor:move">Difference of SRAM and DRAM</div></font></h2>
+                <div style="cursor:pointer">
+                <img src="r5.jpg" WIDTH="1500px" height="600px"></div>
+                <h3 align="center">SRAM VS DRAM</h3>
+            </section>
+            <section class="dd">
+                <h1 align="center"> <div style="cursor:nw-resize">Difference between SRAM and DRAM</div></h1>
+                <table align="center" border="1" width="75%">
+                    <thead>
+                        <tr>
+                            <td align="center"><b>SRAM</b></td>
+                            
+                            <TD align="center"><b>DRAM</b></TD>
+                            
+                        </tr>
+                    </thead>
+                    <tr> <div style="cursor:default">
+                        <td>SRAM has lower access time, which is faster
+                            compared to DRAM.</td>
+                            
+                            <td>DRAM has a higher access time. It is slower than
+                                SRAM.</td></div>
+                                
+                    </tr>
+                    <tr>
+                        <td>SRAM is costlier than DRAM.</td>
+                        
+                        <td>DRAM cost is lesser compared to SRAM.</td>
+                    </tr>
+                    <tr>
+                        <td>SRAM offers low packaging density.</td>
+                        <td>DRAM offers a high packaging density.</td>
+                    </tr>
+                    <tr>
+                        <td>Uses transistors and latches.</td>
+                        <td>Uses capacitors and very few transistors.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SRAM is of a smaller size</td>
+                        <td>DRAM is available in larger storage capacity.</td>
+                    </tr>
+                    <tr>
+                        <td>SRAM is in the form of on-chip memory. </td>
+                        <td>DRAM has the characteristics of off-chip memory.</td>
+                    </tr>
+                    <tr>
+                        <td>The storage capacity of SRAM is 1MB to 16MB</td>
+                        <td>The storage capacity of DRAM is 1 GB to 16GB</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="pic">
+                <h1><font color="red"><i><u>External/Secondary Memory</u></i></font></h1>
+                <br>
+                <img  align="center" src="C:\Users\Acer\Desktop\rashmi 21cis0062\r6I.jpg" width="300px" height="250px">
+                <img  src="C:\Users\Acer\Desktop\rashmi 21cis0062\r6II.jpg" width="500px" height="350px">
+                <img align="right" src="C:\Users\Acer\Desktop\rashmi 21cis0062\r6IV.png" width="600px" height="400px">
+                <img  align="left"src="C:\Users\Acer\Desktop\rashmi 21cis0062\r6III.webp" width="400px" height="200px">
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <section class="ex">
+                <h1 align="center">External/Secondary Memory</h1>
+        <p class="pp">It is also known as auxiliary memory and backup memory. It is a non-volatile memory and used to store a large amount of data or information. The data or information stored in secondary memory is permanent, and it is slower than primary memory. A CPU cannot access secondary memory directly. The data/information from the auxiliary memory is first transferred to the main memory, and then the CPU can access it.</p>
+        <h2>Characteristics of Secondary Memory</h2>
+        <ol style="list-style:outside Upper-alpha;" >
+            <li>It is a slow memory but reusable.</li><br>
+            <li>It is a reliable and non-volatile memory.</li><br>
+            <li>It is cheaper than primary memory.</li><br>
+            <li>The storage capacity of secondary memory is large.</li><br>
+            <li>A computer system can run without secondary memory.</li><br>
+        </ol>
+        <h3><u>Types of Secondary Memory </u></h3>
+        <h4>1.Magnetic Tapes</h4>
+        <p>Magnetic tape is a long, narrow strip of plastic film with a thin, magnetic coating on it that is used for magnetic recording. Bits are recorded on tape as magnetic patches called RECORDS that run along many tracks. Typically, 7 or 9 bits are recorded concurrently. Each track has one read/write head, which allows data to be recorded and read as a sequence of characters. It can be stopped, started moving forward or backward, or rewound.</p>
+        <h4>2.Magnetic Disks</h4>
+        <p >A magnetic disk is a circular metal or a plastic plate and these plates are coated with magnetic material. The disc is used on both sides. Bits are stored in magnetized surfaces in locations called tracks that run in concentric rings. Sectors are typically used to break tracks into pieces.</p>
+        <h4>3.Optical Disks</h4>
+        <p>It’s a laser-based storage medium that can be written to and read. It is reasonably priced and has a long lifespan. The optical disc can be taken out of the computer by occasional users.</p>
+            </section>
+            <section class="jj">
+            <h1 align="center">Cache Memory</h1>
+        <p><b>It is a type of high-speed semiconductor memory that can help the CPU run faster. Between the CPU and the main memory, it serves as a buffer. It is used to store the data and programs that the CPU uses the most frequently.</b></p>
+        <h2>Advantages of Cache Memory</h2>
+        <ol>
+            <li>It is faster than the main memory.</li><br>
+            <li>When compared to the main memory, it takes less time to access it.</li><br>
+            <li>It keeps the programs that can be run in a short amount of time.</li><br>
+            <li>It stores data in temporary use.</li><br>
+        </ol>
+        <h2>Disadvantages of Cache Memory</h2>
+        <ol>
+            <li>Because of the semiconductors used, it is very expensive.</li><br>
+            <li>The size of the cache (amount of data it can store) is usually small.</li>
+        </ol>
+        <br>
+        <img src="C:\Users\Acer\Desktop\rashmi 21cis0062\r7I.webp" width="400px"height="250px">
+        <img align="right" src="data:image/jpeg;base64,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ZnpxJq52pfxPDTS21i4kVt8mvrXj8vFCOTxcOPDDF22uN6dPt9SMmFgiJe6Pel4Jz5oxlF+q0yNFutqeF9QvLZZSbNYH6X6l36dviyV25abI0NMha8ttrVMF5C+5dkrC05Ws0DeJ5nms3gUgu5glykyG/gwn6jWjdgmnNnPe6/MADie2rMSjyfyv0vzowsHN4d1wyt3q35eylWm2vvI+Y5JC2MMe0njdr7C3M3A4ce/QLoTfk8Vh7o/QWB+DbQcbAWA7Se9Z6vORuXzQhzjGzy5IDmcMz7bxp6jOBcdDwAvour0a4H4RUeEPb+T01msBOYOlHWbqRra+84DjH2LXerEdt7cvT5nKWXzGYnHv48MU9UmpJ/G735Vyuye7CbP+B0rWOHjpLSS9xtoy/Y0WHnueakiIsN2ewERFAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAfHNB0IuO9cyp2doZDmfRwOd8IxR5v1rXXURAcSTZalPk75g7GVFU1v6mfKfQtzBMIhpYW08DbRtudTckk3JJ5lb6K2wERFAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREB/9k="width="400px" height="200px">
+     </section>
+     <section class="tt">
+        <h1>What is Memory Representation in computer?</h1>
+<p class="ww" > A piece of computer memory can be represented by <mark>a series of 0's and 1's</mark>, with one digit for each bit of memory; the value 1 represents an “on” bit and a 0 represents an “off” bit.<br>
+       
+        The computer memory stores different kinds of data like <b><u>input data, output data, intermediate results, etc., and the instructions.</u></b> Binary digit or bit is the basic unit of memory.<br> A bit is a single binary digit, i.e., 0 or 1. A bit is the smallest unit of representation of data in a computer. However, the data is handled by the computer as a combination of bits. A group of 8 bits form a byte. One byte is the smallest unit of data that is handled by the computer. One byte can store 28, i.e., 256 different combinations of bits, and thus can be used to represent 256 different symbols. In a byte, the different combinations of bits fall in the range 00000000 to 11111111. A group of bytes can be further combined to form a word. A word can be a group of 2, 4 or 8 bytes.
+    </p>
+<b>
+    <ul>
+<li>1 bit = 0 or 1</li>
+<li>1 Byte (B) = 8 bits</li>
+<li>1 Kilobyte (KB) = 210 = 1024 bytes</li>
+<li>1 Megabyte (MB) = 220 = 1024KB</li>
+<li>1 Gigabyte (GB) = 230 = 1024 MB = 1024 *1024 KB</li>
+<li>1 Terabyte (TB) = 240 = 1024 GB = 1024 * 1024 *1024 KB</li></b>
+    </ul>
+<br>
+<u><i><b><font face="times new roman" size="4">
+Memory is logically organized as a linear array of locations. For a processor, the range of the memory addresses is 0 to the maximum size of memory. Figure shows the organization of a 16 MB block of memory for a processor with a 32-bit word.</font></b></i></u>
+   <table align="center" border="1" width="75%">
+    <caption align="center">Memory allocation for Fundamental data types.</caption>
+    <thead>
+        <tr> 
+         <td>Data type</td>
+        <td colspan="2">Space in memory</td>
+        <td>Range of value</td>
+        </tr>
+ </thead>
+ <tr>
+    <td>char</td>
+    <td>1 bytes</td>
+    <td>8 bits</td>
+    <td>-127 to 128</td>
+</tr>
+ <tr>
+    <td>int</td>
+        <td>2 bytes</td>
+        <td>16 bits</td>
+    <td>.-32,768to 32,767</td>
+ </tr>
+ <tr>
+    <td>float</td>
+    <td>4 bytes</td>
+    <td>32 bits</td>
+    <td>3.4*10-38 to 3.4*1038-1</td>
+ </tr>
+ <tr>
+    <td>double</td>
+    <td>8 bytes</td>
+    <td>64 bits</td>
+    <td>1.7*10-308 to 1.7+10308-1</td>
+ </tr>
+</table>
+     </section>
+     <br>
+     <section class="em">
+        <a href="pro11.html"> CLICK AND GO THROUGH THIS</a></section>
+           
+            </section>
+     
+   <!--java----->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right="0";
+    }
+    function hidemenu(){
+        navLinks.style.right="-200px";
+    }
+    
+</script>
+   
+</body>
+
+</html>
